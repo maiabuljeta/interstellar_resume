@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIA BULJETA - Cosmic Design Maestro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --bg-gradient: linear-gradient(135deg, #000000, #1a1a2e, #16213e, #0f3460);
+            --text-gradient: linear-gradient(90deg, #00ffff, #ff00ff);
+            --accent-color: #ff00ff;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-gradient);
+            background-size: 400% 400%;
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(26, 26, 46, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4em;
+            text-align: center;
+            background: var(--text-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            transition: all 0.5s ease;
+            transform: translateZ(20px);
+        }
+
+        .section:hover {
+            transform: translateZ(50px) scale(1.05);
+        }
+
+        .section h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            transform: translateZ(10px);
+        }
+
+        .experience-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateZ(30px) scale(1.03);
+        }
+
+        .experience-item h3 {
+            color: #00ffff;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        ul li::before {
+            content: "▹";
+            color: var(--accent-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            transform: translateZ(5px);
+        }
+
+        .skill-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateZ(20px) scale(1.1);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .star {
+            position: fixed;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle linear infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0; transform: translateZ(0); }
+            50% { opacity: 1; transform: translateZ(100px); }
+            100% { opacity: 0; transform: translateZ(0); }
+        }
+
+        .planet {
+            position: fixed;
+            border-radius: 50%;
+            animation: orbit linear infinite;
+        }
+
+        @keyframes orbit {
+            0% { transform: rotate(0deg) translateX(100vw) rotate(0deg); }
+            100% { transform: rotate(360deg) translateX(100vw) rotate(-360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
+<script defer data-domain="maiabuljeta.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+<body>
+    <div class="container" id="resume">
+        <h1>MAIA BULJETA</h1>
+        
+        <div class="section">
+            <h2>Cosmic Contact</h2>
+            <p>Email: maiabuljeta@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/maia-buljeta-fuchs-833b42131" target="_blank">Stellar Profile</a></p>
+            <p>Work Sample: <a href="https://drive.google.com/file/d/1tGkvyMqcBXuqRRE5wYvF0IR4tfKli1ea/view?usp=drivesdk" target="_blank">View Galactic Work Sample</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Stellar Summary</h2>
+            <p>Visionary film director and graphic designer with a cosmic track record in creating mind-bending visual content across multiple dimensions of media. Master of managing parallel universe projects from concept to completion, with unparalleled skills in brand elevation, typographic sorcery, and design alchemy. Fluent in the mystic arts of Adobe Creative Suite and experienced in leading diverse teams to produce visual masterpieces that transcend time and space.</p>
+        </div>
+
+        <div class="section">
+            <h2>Interstellar Experience</h2>
+            <div class="experience-item">
+                <h3>Audio-Visual Maestro, Design X Health</h3>
+                <p><em>January 2022 - Present</em></p>
+                <ul>
+                    <li>Crafted digital and print marvels for groundbreaking health campaigns.</li>
+                    <li>Orchestrated multiple projects with superhuman efficiency.</li>
+                    <li>Collaborated with interdimensional teams to manifest visions and integrate cosmic feedback.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Visionary Creator, Hypothius Picturehouse (Founder and CEO)</h3>
+                <p><em>May 2011 - Present</em></p>
+                <ul>
+                    <li>Directed 20+ reality-bending short films and one feature film, premiered at intergalactic festivals.</li>
+                    <li>Conjured key art, style guides, and promotional materials that defy mortal comprehension.</li>
+                    <li>Forged consistent brand identities across multiversal platforms.</li>
+                    <li>Wielded Adobe Photoshop, Illustrator, and After Effects for otherworldly post-production.</li>
+                    <li>Forged consistent brand identities across multiversal platforms.</li>
+                    <li>Synergized with various brands offering services to multiple clients including WPP's Wunderman Thompson,
+                        Jacob Burns Film Center Media Arts Lab, Hellmann's Mayonnaise's Instagram, Degree Deoderant and more, including
+                        writing a superbowl commercial.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Festival Study Guide Creator, SFFILM</h3>
+                <p><em>May 2011 - 2024</em></p>
+                <ul>
+                    <li>Developed a comprehensive study guide for the SFFILM Festival.</li>
+                    <li>Ensured brand consistency and integrated stakeholder feedback into the final product.</li>
+                    <li>Member of dynamic screening committee for shorts for the intergalactic 2025 festival.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Supernova Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Art Direction</div>
+                <div class="skill-item">Branding Alchemy</div>
+                <div class="skill-item">Typographic Sorcery</div>
+                <div class="skill-item">Adobe Creative Mastery</div>
+                <div class="skill-item">Project Orchestration</div>
+                <div class="skill-item">Quantum Communication</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Cosmic Education</h2>
+            <ul>
+                <li>Brown University, Rhode Island: Film Studies (Dimension-Bending Techniques)</li>
+                <li>Jacob Burns Film Center Media Arts Lab: Advanced Cinematic Sorcery (2012 - 2017)</li>
+                <li>Rockland Community College: Foundational Reality Manipulation (2017 - 2018)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Intergalactic Honors</h2>
+            <ul>
+                <li>Supreme Champion of JBFC 24 Hour Film Challenge</li>
+                <li>Phi Theta Kappa Interdimensional Scholar</li>
+                <li>National Society of Cosmic Collegiate Scholars</li>
+                <li>Italian Heritage Starship Scholarship</li>
+                <li>RISD Honors: Master of Visual Realms</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const resume = document.getElementById('resume');
+        
+        document.addEventListener('mousemove', (e) => {
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 100;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 100;
+            resume.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        const sections = document.querySelectorAll('.section');
+        sections.forEach((section, index) => {
+            section.style.animation = `float ${5 + index}s ease-in-out infinite`;
+            section.style.animationDelay = `${index * 0.5}s`;
+        });
+
+        const experienceItems = document.querySelectorAll('.experience-item');
+        experienceItems.forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const angleX = (y - centerY) / 30;
+                const angleY = (centerX - x) / 30;
+                item.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg) translateZ(30px)`;
+            });
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'rotateX(0) rotateY(0) translateZ(10px)';
+            });
+        });
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            document.body.appendChild(star);
+            setTimeout(() => {
+                star.remove();
+            }, 5000);
+        }
+
+        function createPlanet() {
+            const planet = document.createElement('div');
+            planet.className = 'planet';
+            const size = Math.random() * 50 + 10;
+            planet.style.width = `${size}px`;
+            planet.style.height = `${size}px`;
+            planet.style.backgroundColor = `hsl(${Math.random() * 360}, 50%, 50%)`;
+            planet.style.top = `${Math.random() * 100}vh`;
+            planet.style.animationDuration = `${Math.random() * 20 + 10}s`;
+            document.body.appendChild(planet);
+            setTimeout(() => {
+                planet.remove();
+            }, 20000);
+        }
+
+        setInterval(createStar, 100);
+        setInterval(createPlanet, 5000);
+    </script>
+</body>
+</html>
